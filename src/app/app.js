@@ -2,20 +2,14 @@ import angular from 'angular';
 
 import './app.scss';
 
-class AppController {
-  $onInit() {
-    this.message = 'It works!';
-  }
-}
+// main app component
+import AppComponent from './app.component';
 
-let app = {
-  template: require('./app.html'),
-  controller: AppController
-};
+import './components/';
 
 const MODULE_NAME = 'pbVideoFeed';
 
 angular.module(MODULE_NAME, [])
-  .component('app', app);
+  .directive('app', AppComponent);
 
 export default MODULE_NAME;
