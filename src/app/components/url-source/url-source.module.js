@@ -4,6 +4,6 @@ import { UrlSourceService } from './url-source.service';
 import './url-source.css';
 
 export const UrlSourceModule = angular.module('urlSource', [])
-  .component('urlSource', UrlSourceComponent)
-  .service('UrlSourceService', UrlSourceService)
-  .name;
+	.component('urlSource', UrlSourceComponent)
+	.service('UrlSourceService', UrlSourceService)
+	.name;

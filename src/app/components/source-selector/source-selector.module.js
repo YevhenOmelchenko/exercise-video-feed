@@ -4,6 +4,6 @@ import { SourceSelectorService } from './source-selector.service';
 import './source-selector.css';
 
 export const SourceSelectorModule = angular.module('sourceSelector', [])
-  .component('sourceSelector', SourceSelectorComponent)
-  .service('SourceSelectorService', SourceSelectorService)
-  .name;
+	.component('sourceSelector', SourceSelectorComponent)
+	.service('SourceSelectorService', SourceSelectorService)
+	.name;

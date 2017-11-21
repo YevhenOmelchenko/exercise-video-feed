@@ -7,5 +7,5 @@ import './app.css';
 const MODULE_NAME = 'pbVideoFeed';
 
 export const AppModule = angular.module(MODULE_NAME, [ComponentsModule, ServicesModule])
-  .component('app', AppComponent)
-  .name;
+	.component('app', AppComponent)
+	.name;

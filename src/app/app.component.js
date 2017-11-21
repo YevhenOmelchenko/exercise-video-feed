@@ -3,6 +3,6 @@ import controller from './app.controller';
 
 export const AppComponent = {
 	restrict: 'E',
-    template,
-    controller
+	template,
+	controller
 };

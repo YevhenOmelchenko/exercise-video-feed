@@ -4,6 +4,6 @@ export default class UrlSourceController {
 	}
 	
 	$onInit() {
-     	this.srcSCE = this.urlSourceService.getTrustedURL(this.item.url);
-    }
+		this.srcSCE = this.urlSourceService.getTrustedURL(this.item.url);
+	}
 }

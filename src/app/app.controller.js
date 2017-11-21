@@ -5,5 +5,5 @@ export default class AppController {
 
 	$onInit() {
 		this.data = this.generalDataService.getItems();
-    }
+	}
 }
