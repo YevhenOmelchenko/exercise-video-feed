@@ -4,7 +4,9 @@ import controller from './url-source.controller';
 export const UrlSourceComponent = {
   restrict: 'E',
   bindings: {
-  	item: '<'
+  	item: '<',
+  	width: '<',
+  	height: '<'
   },
   template,
   controller

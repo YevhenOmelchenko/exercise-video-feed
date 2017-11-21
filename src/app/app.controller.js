@@ -1,6 +1,5 @@
 export default class AppController {
 	constructor() {
-		this.message = 'It works!';
 		this.data = {
 		  "items": [
 		    {
