@@ -1,0 +1,6 @@
+.url-source-container {
+	display: inline-block;
+}
+.url-source-container iframe {
+	border: 1px solid #EAEAEA;
+}

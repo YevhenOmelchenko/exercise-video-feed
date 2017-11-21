@@ -1,8 +1,13 @@
-.container, span {
-	display: inline-block;
+.info-area-container {
+	display: flex;
+	justify-content: space-between;
+	border-left: 1px solid #EAEAEA;
+	border-top: 1px solid #EAEAEA;
+	border-right: 1px solid #EAEAEA;
+	border-radius: 5px 5px 0 0;
+	padding: 15px 10px;
 }
-.title {
-	background-color: red;
-	width:10px;
-	height: 10px;
+.title, .views {
+	font-size: 10px;
+	color: #7D7E82;
 }

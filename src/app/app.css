@@ -1,0 +1,19 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+header {
+	text-align: center;
+}
+
+header .container {
+	padding: 15px 10px;
+	background-color: #FAFAFA;
+	color: #A5A7B4;
+	border-bottom: 1px solid #EAEAEA;
+}
+
+source-selector {
+	text-align: center;
+}

@@ -1,0 +1,6 @@
+.youtube-source-container {
+	display: inline-block;
+}
+.youtube-source-container iframe {
+	border: 1px solid #EAEAEA;
+}
