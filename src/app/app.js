@@ -1,15 +1,10 @@
 import angular from 'angular';
-
+import { AppComponent } from './app.component';
+import { ComponentsModule } from'./components/components.module';
 import './app.scss';
-
-// main app component
-import AppComponent from './app.component';
-
-import './components/';
 
 const MODULE_NAME = 'pbVideoFeed';
 
-angular.module(MODULE_NAME, [])
-  .directive('app', AppComponent);
-
-export default MODULE_NAME;
+export const AppModule = angular.module(MODULE_NAME, [ComponentsModule])
+  .component('app', AppComponent)
+  .name;

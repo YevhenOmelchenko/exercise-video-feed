@@ -1,0 +1,5 @@
+<div ng-repeat="item in $ctrl.items">
+	<span>ITEM</span>
+	<span>{{item}}</span>
+	<url-source ng-if="item.source === 'url'" item="item"></url-source>
+</div>

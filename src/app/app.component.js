@@ -1,14 +1,9 @@
 import template from './app.html';
 import controller from './app.controller';
 
-let appComponent = function() {
-  return {
-    template,
+export const AppComponent = {
+	restrict: 'E',
     scope: {},
-    restrict: 'E',
-    controller,
-    controllerAs: 'ctrl'
-  };
+    template,
+    controller
 };
-
-export default appComponent;
