@@ -27,6 +27,12 @@ export class GeneralDataService {
 					"views": 8820
 				},
 				{
+					"type": "video",
+					"source": "url",
+					"url": "",
+					"views": 8820
+				},
+				{
 					"title": "Top 10 fastest cars in the world",
 					"type": "video",
 					"source": "youtube",

@@ -1,11 +1,16 @@
-<div ng-repeat="item in $ctrl.items" class="source-selector-container">
-	<url-source ng-if="item.source === 'url'" 
-				item="item" 
-				width="640" 
-				height="480"></url-source>
-	
-	<youtube-source ng-if="item.source === 'youtube'" 
+<div class="source-selector-container">
+	<div ng-repeat="item in $ctrl.items" class="source-container">
+		<url-source ng-if="item.avaliableSource === 'url'" 
 					item="item" 
 					width="640" 
-					height="480"></youtube-source>
+					height="480"></url-source>
+		
+		<youtube-source ng-if="item.avaliableSource === 'youtube'" 
+						item="item" 
+						width="640" 
+						height="480"></youtube-source>
+
+		<div ng-if="!item.avaliableSource" class="unavailable-video">Video is unavailable</div>
+	</div>
 </div>
+

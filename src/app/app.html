@@ -1,28 +1,30 @@
 <header>
-  <div class="container">VIDEO FEED</div>
+  <div class="header-container">VIDEO FEED</div>
 </header>
 
-<source-selector items="$ctrl.data.items"></source-selector>
+<div class="app-container">
+  <source-selector items="$ctrl.data.items"></source-selector>
 
-<div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-<!-- Your embedded video player code -->
-<div class="fb-video"
-     data-href="https://www.facebook.com/facebook/videos/1052114818157758/"
-     data-width="500"
-     data-show-text="false">
-    <div class="fb-xfbml-parse-ignore">
-        <blockquote cite="https://www.facebook.com/facebook/videos/1052114818157758/">
-            <a href="https://www.facebook.com/facebook/videos/1052114818157758/">How to Share With Just Friends</a>
-            <p>How to share with just friends.</p>
-            Posted by <a href="https://www.facebook.com/facebook/">Facebook</a> on Friday, December 5, 2014
-        </blockquote>
-    </div>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- Your embedded video player code -->
+  <div class="fb-video"
+       data-href="https://www.facebook.com/facebook/videos/1052114818157758/"
+       data-width="500"
+       data-show-text="false">
+      <div class="fb-xfbml-parse-ignore">
+          <blockquote cite="https://www.facebook.com/facebook/videos/1052114818157758/">
+              <a href="https://www.facebook.com/facebook/videos/1052114818157758/">How to Share With Just Friends</a>
+              <p>How to share with just friends.</p>
+              Posted by <a href="https://www.facebook.com/facebook/">Facebook</a> on Friday, December 5, 2014
+          </blockquote>
+      </div>
+  </div>
 </div>
 

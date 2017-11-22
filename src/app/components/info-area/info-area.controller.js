@@ -4,15 +4,9 @@ export default class InfoAreaController {
 	}
 
 	$onInit() {
-		this.title = this.isDataAvaliable(this.title);
-		this.views = this.views ? this.formatViewsData(this.views) : this.isDataAvaliable(this.views);
-	}
-
-	isDataAvaliable(data) {
-		return data || 'data is unavailable';
-	}
-
-	formatViewsData(viewsData) {
-		return (viewsData / 1000000).toFixed(2) + 'M views';
+		this.title = this.infoAreaService.isDataAvaliable(this.title);
+		this.views = this.views 
+							? this.infoAreaService.formatViewsData(this.views) 
+							: this.infoAreaService.isDataAvaliable(this.views);
 	}
 }
