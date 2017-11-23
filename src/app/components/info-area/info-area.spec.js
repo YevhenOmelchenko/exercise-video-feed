@@ -4,6 +4,8 @@ import { InfoAreaModule } from './info-area.module';
 
 describe('info-area component', () => {
 	describe('info-area.service', () => {
+		let element;
+		let service;
 		beforeEach(() => {
 			angular.mock.module(InfoAreaModule);
 
@@ -38,7 +40,7 @@ describe('info-area component', () => {
 				let result;
 				let	viewsData = 1000000;
 				result = service.formatViewsData(viewsData);
-				expect(result).toBe('1M views');
+				expect(result).toBe('1.00M views');
 			});
 
 		});

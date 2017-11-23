@@ -1,4 +1,4 @@
-import app from './app';
+import { AppModule } from './app';
 
 describe('app', () => {
 
@@ -7,7 +7,7 @@ describe('app', () => {
     let element;
 
     beforeEach(() => {
-      angular.mock.module(app);
+      angular.mock.module(AppModule);
 
       angular.mock.inject(($compile, $rootScope) => {
         element = $compile('<app></app>')($rootScope)[0];
@@ -16,7 +16,7 @@ describe('app', () => {
     });
 
     it('should contain the starter url', () => {
-      expect(element.querySelector('div').innerText).toBe('It works!');
+      expect(element.querySelector('div').innerText).toBe('VIDEO FEED');
     });
   });
 });
