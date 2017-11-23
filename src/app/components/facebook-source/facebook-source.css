@@ -1,0 +1,10 @@
+.facebook-source-container {
+	display: inline-block;
+}
+.facebook-source-container .fb-video {
+	border: 1px solid #EAEAEA;
+	font-size: 12px;
+	color: #7D7E82;
+	font-weight: bold;
+	text-align: center;
+}
